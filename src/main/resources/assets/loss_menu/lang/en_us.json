@@ -1,0 +1,33 @@
+{
+  "loss_menu.world_select.title": "Create World",
+  "loss_menu.world_select.epoch": "Dislocated Epoch",
+  "loss_menu.world_select.epoch.tooltip": "Start the story from the beginning",
+  "loss_menu.world_select.times_change.locked": "???",
+  "loss_menu.world_select.times_change.locked.tooltip": "Unlocks after ???",
+  "loss_menu.world_select.times_change.unlocked": "Vicissitudes",
+  "loss_menu.world_select.times_change.unlocked.tooltip": "Tens of thousands of years later...",
+  "loss_menu.world_select.vanilla.locked": "Original World (Locked)",
+  "loss_menu.world_select.vanilla.locked.tooltip": "Unlocks after completing the entire story",
+  "loss_menu.world_select.vanilla.unlocked": "Original World",
+  "loss_menu.world_select.vanilla.unlocked.tooltip": "Feel the creation from millennia ago!",
+  "loss_menu.world_select.back": "Back",
+
+  "loss_menu.create.canghai.title": "Create Vicissitudes",
+  "loss_menu.create.cuowei.title": "Create Dislocated Epoch",
+  "loss_menu.create.world_name": "World Name",
+  "loss_menu.create.canghai.default_name": "Vicissitudes",
+  "loss_menu.create.cuowei.default_name": "Dislocated Epoch",
+  "loss_menu.create.allow_cheats.on": "Allow Cheats: On",
+  "loss_menu.create.allow_cheats.off": "Allow Cheats: Off",
+  "loss_menu.create.keep_inventory.on": "Keep Inventory: On",
+  "loss_menu.create.keep_inventory.off": "Keep Inventory: Off",
+  "loss_menu.create.create": "Create",
+  "loss_menu.create.back": "Back",
+  "loss_menu.create.error.empty_name": "World name cannot be empty",
+  "loss_menu.create.error.world_exists": "World already exists, please choose another name",
+  "loss_menu.create.error.template_missing": "Template files missing, cannot create world",
+  "loss_menu.create.error.failed": "World creation failed, please check logs",
+
+  "loss_menu.command.worldmode.unknown_mode": "Unknown mode: %s",
+  "loss_menu.command.worldmode.success": "Set %s unlock state to %s"
+}

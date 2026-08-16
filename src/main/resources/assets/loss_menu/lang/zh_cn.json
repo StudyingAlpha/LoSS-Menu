@@ -1,0 +1,33 @@
+{
+  "loss_menu.world_select.title": "创建世界",
+  "loss_menu.world_select.epoch": "错位的纪元",
+  "loss_menu.world_select.epoch.tooltip": "从头开始游戏",
+  "loss_menu.world_select.times_change.locked": "???",
+  "loss_menu.world_select.times_change.locked.tooltip": "???后开放",
+  "loss_menu.world_select.times_change.unlocked": "沧海桑田",
+  "loss_menu.world_select.times_change.unlocked.tooltip": "数万年后......",
+  "loss_menu.world_select.vanilla.locked": "原版世界（已锁定）",
+  "loss_menu.world_select.vanilla.locked.tooltip": "完成全部剧情后开放",
+  "loss_menu.world_select.vanilla.unlocked": "原版世界",
+  "loss_menu.world_select.vanilla.unlocked.tooltip": "感受万年前的创造吧!",
+  "loss_menu.world_select.back": "返回",
+
+  "loss_menu.create.canghai.title": "创建沧海桑田",
+  "loss_menu.create.cuowei.title": "创建错位的纪元",
+  "loss_menu.create.world_name": "世界名称",
+  "loss_menu.create.canghai.default_name": "沧海桑田",
+  "loss_menu.create.cuowei.default_name": "错位的纪元",
+  "loss_menu.create.allow_cheats.on": "允许作弊：开",
+  "loss_menu.create.allow_cheats.off": "允许作弊：关",
+  "loss_menu.create.keep_inventory.on": "死亡不掉落：开",
+  "loss_menu.create.keep_inventory.off": "死亡不掉落：关",
+  "loss_menu.create.create": "创建",
+  "loss_menu.create.back": "返回",
+  "loss_menu.create.error.empty_name": "世界名称不能为空",
+  "loss_menu.create.error.world_exists": "世界已存在，请更换名称",
+  "loss_menu.create.error.template_missing": "模板文件缺失，无法创建世界",
+  "loss_menu.create.error.failed": "创建世界失败，请查看日志",
+
+  "loss_menu.command.worldmode.unknown_mode": "未知模式：%s",
+  "loss_menu.command.worldmode.success": "已将 %s 解锁状态设置为 %s"
+}

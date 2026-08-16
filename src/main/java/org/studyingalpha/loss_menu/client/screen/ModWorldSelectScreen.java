@@ -16,7 +16,7 @@ public class ModWorldSelectScreen extends Screen {
     private final Screen lastScreen;
 
     public ModWorldSelectScreen(Screen lastScreen) {
-        super(Component.literal("创建世界"));
+        super(Component.translatable("loss_menu.world_select.title"));
         this.lastScreen = lastScreen;
     }
 
@@ -35,27 +35,29 @@ public class ModWorldSelectScreen extends Screen {
         int startY = this.height / 2 - 40;
 
         // 错位的纪元（始终可用）
+        Component epochText = Component.translatable("loss_menu.world_select.epoch");
+        Component epochTooltip = Component.translatable("loss_menu.world_select.epoch.tooltip");
         Button epochButton = Button.builder(
-                        Component.literal("错位的纪元"),
+                        epochText,
                         button -> {
                             if (this.minecraft != null) {
                                 this.minecraft.setScreen(new CreateCuoweiScreen(this));
                             }
                         }
                 ).bounds(startX, startY, buttonWidth, buttonHeight)
-                .tooltip(Tooltip.create(Component.literal("从头开始游戏")))
+                .tooltip(Tooltip.create(epochTooltip))
                 .build();
         this.addRenderableWidget(epochButton);
 
         startY += buttonHeight + 4;
 
-        // 沧海桑田（未解锁时显示???）
+// 沧海桑田（未解锁时显示???）
         Component timesChangeText = timesChangeUnlocked
-                ? Component.literal("沧海桑田")
-                : Component.literal("???");
+                ? Component.translatable("loss_menu.world_select.times_change.unlocked")
+                : Component.translatable("loss_menu.world_select.times_change.locked");
         Component timesChangeTooltip = timesChangeUnlocked
-                ? Component.literal("数万年后......")
-                : Component.literal("???后开放");
+                ? Component.translatable("loss_menu.world_select.times_change.unlocked.tooltip")
+                : Component.translatable("loss_menu.world_select.times_change.locked.tooltip");
 
         Button timesChangeButton = Button.builder(
                         timesChangeText,
@@ -74,13 +76,13 @@ public class ModWorldSelectScreen extends Screen {
 
         startY += buttonHeight + 4;
 
-        // 原版世界
+// 原版世界
         Component vanillaText = vanillaUnlocked
-                ? Component.literal("原版世界")
-                : Component.literal("原版世界（已锁定）");
+                ? Component.translatable("loss_menu.world_select.vanilla.unlocked")
+                : Component.translatable("loss_menu.world_select.vanilla.locked");
         Component vanillaTooltip = vanillaUnlocked
-                ? Component.literal("感受万年前的创造吧!")
-                : Component.literal("完成全部剧情后开放");
+                ? Component.translatable("loss_menu.world_select.vanilla.unlocked.tooltip")
+                : Component.translatable("loss_menu.world_select.vanilla.locked.tooltip");
 
         Button vanillaButton = Button.builder(
                         vanillaText,
@@ -98,9 +100,9 @@ public class ModWorldSelectScreen extends Screen {
 
         startY += buttonHeight + 8;
 
-        // 返回
+// 返回
         Button backButton = Button.builder(
-                Component.literal("返回"),
+                Component.translatable("loss_menu.world_select.back"),
                 button -> {
                     if (this.minecraft != null) {
                         this.minecraft.setScreen(this.lastScreen);

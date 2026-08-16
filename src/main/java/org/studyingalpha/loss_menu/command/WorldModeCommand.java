@@ -33,13 +33,15 @@ public class WorldModeCommand {
         boolean value = BoolArgumentType.getBool(context, "value");
 
         if (!mode.equals("times_change") && !mode.equals("vanilla")) {
-            context.getSource().sendFailure(Component.literal("未知模式: " + mode));
+            context.getSource().sendFailure(
+                    Component.translatable("loss_menu.command.worldmode.unknown_mode", mode)
+            );
             return 0;
         }
 
         ProgressionManager.setUnlocked(mode, value);
         context.getSource().sendSuccess(
-                () -> Component.literal("已将 " + mode + " 解锁状态设置为 " + value),
+                () -> Component.translatable("loss_menu.command.worldmode.success", mode, value),
                 true
         );
         return 1;

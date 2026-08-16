@@ -1,0 +1,33 @@
+{
+  "loss_menu.world_select.title": "闢新生界",
+  "loss_menu.world_select.epoch": "往世舛辰",
+  "loss_menu.world_select.epoch.tooltip": "自始而戲之",
+  "loss_menu.world_select.times_change.locked": "???",
+  "loss_menu.world_select.times_change.locked.tooltip": "待機緣至乃啟",
+  "loss_menu.world_select.times_change.unlocked": "滄海桑田",
+  "loss_menu.world_select.times_change.unlocked.tooltip": "萬載之後……",
+  "loss_menu.world_select.vanilla.locked": "常世（封）",
+  "loss_menu.world_select.vanilla.locked.tooltip": "完諸事乃启",
+  "loss_menu.world_select.vanilla.unlocked": "常世",
+  "loss_menu.world_select.vanilla.unlocked.tooltip": "一窺萬古匠心",
+  "loss_menu.world_select.back": "罷去",
+
+  "loss_menu.create.canghai.title": "闢滄海桑田界",
+  "loss_menu.create.cuowei.title": "闢往世舛辰界",
+  "loss_menu.create.world_name": "世界名號",
+  "loss_menu.create.canghai.default_name": "滄海桑田",
+  "loss_menu.create.cuowei.default_name": "往世舛辰",
+  "loss_menu.create.allow_cheats.on": "縱權：開",
+  "loss_menu.create.allow_cheats.off": "縱權：關",
+  "loss_menu.create.keep_inventory.on": "歿不遺物：開",
+  "loss_menu.create.keep_inventory.off": "歿不遺物：關",
+  "loss_menu.create.create": "闢界",
+  "loss_menu.create.back": "罷去",
+  "loss_menu.create.error.empty_name": "世名不可空闕",
+  "loss_menu.create.error.world_exists": "此世已存，請易其名",
+  "loss_menu.create.error.template_missing": "模板殘缺，無以闢世",
+  "loss_menu.create.error.failed": "闢世敗矣，請視日誌",
+
+  "loss_menu.command.worldmode.unknown_mode": "模式未詳：%s",
+  "loss_menu.command.worldmode.success": "業將 %s 解鎖之態設為 %s"
+}

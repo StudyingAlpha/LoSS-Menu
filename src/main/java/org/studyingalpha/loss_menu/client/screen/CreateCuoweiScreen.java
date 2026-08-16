@@ -23,10 +23,10 @@ public class CreateCuoweiScreen extends Screen {
     private EditBox worldNameEdit;
     private boolean allowCheats = false;
     private boolean keepInventory = false;
-    private String errorMessage = null;
+    private Component errorMessage = null;
 
     public CreateCuoweiScreen(Screen lastScreen) {
-        super(Component.literal("创建错位的纪元"));
+        super(Component.translatable("loss_menu.create.cuowei.title"));
         this.lastScreen = lastScreen;
     }
 
@@ -42,19 +42,20 @@ public class CreateCuoweiScreen extends Screen {
                 startY,
                 200,
                 20,
-                Component.literal("世界名称")
+                Component.translatable("loss_menu.create.world_name")
         );
         this.worldNameEdit.setMaxLength(64);
-        this.worldNameEdit.setValue("错位的纪元");
+        this.worldNameEdit.setValue(Component.translatable("loss_menu.create.cuowei.default_name").getString());
         this.addRenderableWidget(this.worldNameEdit);
 
         startY += 35;
 
         Button cheatButton = Button.builder(
-                Component.literal("允许作弊：关"),
+                Component.translatable("loss_menu.create.allow_cheats.off"),
                 button -> {
                     allowCheats = !allowCheats;
-                    button.setMessage(Component.literal("允许作弊：" + (allowCheats ? "开" : "关")));
+                    button.setMessage(Component.translatable(allowCheats ?
+                            "loss_menu.create.allow_cheats.on" : "loss_menu.create.allow_cheats.off"));
                 }
         ).bounds(centerX - 100, startY, 200, 20).build();
         this.addRenderableWidget(cheatButton);
@@ -62,10 +63,11 @@ public class CreateCuoweiScreen extends Screen {
         startY += 30;
 
         Button keepInventoryButton = Button.builder(
-                Component.literal("死亡不掉落：关"),
+                Component.translatable("loss_menu.create.keep_inventory.off"),
                 button -> {
                     keepInventory = !keepInventory;
-                    button.setMessage(Component.literal("死亡不掉落：" + (keepInventory ? "开" : "关")));
+                    button.setMessage(Component.translatable(keepInventory ?
+                            "loss_menu.create.keep_inventory.on" : "loss_menu.create.keep_inventory.off"));
                 }
         ).bounds(centerX - 100, startY, 200, 20).build();
         this.addRenderableWidget(keepInventoryButton);
@@ -73,7 +75,7 @@ public class CreateCuoweiScreen extends Screen {
         startY += 30;
 
         Button createButton = Button.builder(
-                Component.literal("创建"),
+                Component.translatable("loss_menu.create.create"),
                 button -> this.createWorld()
         ).bounds(centerX - 100, startY, 200, 20).build();
         this.addRenderableWidget(createButton);
@@ -81,7 +83,7 @@ public class CreateCuoweiScreen extends Screen {
         startY += 30;
 
         Button backButton = Button.builder(
-                Component.literal("返回"),
+                Component.translatable("loss_menu.create.back"),
                 button -> {
                     if (this.minecraft != null) {
                         this.minecraft.setScreen(this.lastScreen);
@@ -98,18 +100,18 @@ public class CreateCuoweiScreen extends Screen {
 
         String worldName = this.worldNameEdit.getValue().trim();
         if (worldName.isEmpty()) {
-            errorMessage = "世界名称不能为空";
+            errorMessage = Component.translatable("loss_menu.create.error.empty_name");
             return;
         }
 
         if (this.minecraft.getLevelSource().levelExists(worldName)) {
-            errorMessage = "世界已存在，请更换名称";
+            errorMessage = Component.translatable("loss_menu.create.error.world_exists");
             return;
         }
 
         Path templatePath = FMLPaths.CONFIGDIR.get().resolve("LoSS Main/templates/cuowei");
         if (!Files.exists(templatePath)) {
-            errorMessage = "模板文件缺失，无法创建世界";
+            errorMessage = Component.translatable("loss_menu.create.error.template_missing");
             return;
         }
 
@@ -125,7 +127,7 @@ public class CreateCuoweiScreen extends Screen {
             this.minecraft.createWorldOpenFlows().loadLevel(this, worldName);
         } catch (Exception e) {
             e.printStackTrace();
-            errorMessage = "创建世界失败，请查看日志";
+            errorMessage = Component.translatable("loss_menu.create.error.failed");
         }
     }
 

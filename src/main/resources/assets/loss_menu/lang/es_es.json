@@ -1,0 +1,33 @@
+{
+  "loss_menu.world_select.title": "Crear Mundo",
+  "loss_menu.world_select.epoch": "La Época Desencajada",
+  "loss_menu.world_select.epoch.tooltip": "Comienza la historia desde el principio",
+  "loss_menu.world_select.times_change.locked": "???",
+  "loss_menu.world_select.times_change.locked.tooltip": "Se desbloquea después de ???",
+  "loss_menu.world_select.times_change.unlocked": "Vicisitudes",
+  "loss_menu.world_select.times_change.unlocked.tooltip": "¡Hace decenas de miles de años...!",
+  "loss_menu.world_select.vanilla.locked": "Mundo Original (Bloqueado)",
+  "loss_menu.world_select.vanilla.locked.tooltip": "Se desbloquea al completar toda la historia",
+  "loss_menu.world_select.vanilla.unlocked": "Mundo Original",
+  "loss_menu.world_select.vanilla.unlocked.tooltip": "¡Siente la creación de hace milenios!",
+  "loss_menu.world_select.back": "Volver",
+
+  "loss_menu.create.canghai.title": "Crear Vicisitudes",
+  "loss_menu.create.cuowei.title": "Crear La Época Desencajada",
+  "loss_menu.create.world_name": "Nombre del mundo",
+  "loss_menu.create.canghai.default_name": "Vicisitudes",
+  "loss_menu.create.cuowei.default_name": "La Época Desencajada",
+  "loss_menu.create.allow_cheats.on": "Permitir trucos: Sí",
+  "loss_menu.create.allow_cheats.off": "Permitir trucos: No",
+  "loss_menu.create.keep_inventory.on": "Mantener inventario: Sí",
+  "loss_menu.create.keep_inventory.off": "Mantener inventario: No",
+  "loss_menu.create.create": "Crear",
+  "loss_menu.create.back": "Volver",
+  "loss_menu.create.error.empty_name": "El nombre del mundo no puede estar vacío",
+  "loss_menu.create.error.world_exists": "El mundo ya existe, por favor elige otro nombre",
+  "loss_menu.create.error.template_missing": "Faltan archivos de plantilla, no se puede crear el mundo",
+  "loss_menu.create.error.failed": "Error al crear el mundo, revisa los registros",
+
+  "loss_menu.command.worldmode.unknown_mode": "Modo desconocido: %s",
+  "loss_menu.command.worldmode.success": "Se ha establecido el estado de desbloqueo de %s a %s"
+}
