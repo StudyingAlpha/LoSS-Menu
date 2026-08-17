@@ -7,8 +7,6 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.worldselection.CreateWorldScreen;
 import net.minecraft.network.chat.Component;
 import org.studyingalpha.loss_menu.config.ProgressionManager;
-import org.studyingalpha.loss_menu.client.screen.CreateCanghaiScreen;
-import org.studyingalpha.loss_menu.client.screen.CreateCuoweiScreen;
 
 
 public class ModWorldSelectScreen extends Screen {
