@@ -110,4 +110,4 @@ cd LoSS-Menu
 许可证
 ------
 
-本项目采用 MIT License。
+本项目采用 GPL 3.0 License。
