@@ -3,6 +3,8 @@ LoSS Menu
 
 LoSS Menu is an auxiliary mod designed for the in-development Minecraft 1.20.1 Forge story-driven modpack "The Lay of Stone and Soul". It replaces the vanilla "Create World" screen, adds two story world modes based on world templates, and controls the unlock order through a global unlock file.
 
+如需查看中文版本，请转至README.md
+
 Features
 --------
 
@@ -23,7 +25,7 @@ Installation
 
 Note: This mod depends on template saves provided by the modpack. Ensure the templates are correctly placed (see "Template Preparation" below).
 
-Commands and Unlocking
+Commands
 --------
 
 The mod provides the /worldmode command to modify unlock states.
@@ -31,11 +33,15 @@ The mod provides the /worldmode command to modify unlock states.
 - Executable only by OPs (permission level 2) or the server console.
 
 Syntax:
+
 /worldmode <mode name> <true/false>
 
 Examples:
+
 /worldmode times_change true   # Unlock "Vicissitudes"
+
 /worldmode vanilla true        # Unlock "Vanilla World"
+
 /worldmode times_change false  # Relock "Vicissitudes"
 
 Supported mode names:
@@ -52,11 +58,14 @@ config/LoSS Main/progression.json
 Default contents:
 
 {
+
   "times_changeUnlocked": false,
+  
   "vanillaUnlocked": false
+  
 }
 
-This file is automatically updated when the /worldmode command or FTB quest commands are executed. Players do not need to edit it manually.
+This file is automatically updated when the /worldmode command are executed. Players do not need to edit it manually.
 
 Template Preparation
 --------
@@ -66,6 +75,7 @@ Although this mod serves my own modpack, thanks to its automated design, other m
 Both story modes create new worlds by copying preset world templates. Template saves should be placed in:
 
 config/LoSS Main/templates/cuowei/   # Dislocated Epoch template
+
 config/LoSS Main/templates/canghai/  # Vicissitudes template
 
 Template requirements:
