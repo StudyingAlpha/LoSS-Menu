@@ -43,7 +43,7 @@ For English version,please go to README_EN.md
 
 /worldmode vanilla true        # 解锁“原版世界”
 
-/worldmode times_change false  # 重新锁定“沧海桑田”
+/worldmode times_change false  # 锁定“沧海桑田”
 
 模式名仅支持：
 
@@ -67,7 +67,7 @@ config/LoSS Main/progression.json
   
 }
 
-该文件会在执行 /worldmode 命令或 FTB 任务命令时自动更新。玩家无需手动编辑。
+该文件会在执行 /worldmode 命令时自动更新。玩家无需手动编辑。
 
 
 模板准备
@@ -85,6 +85,7 @@ config/LoSS Main/templates/canghai/  # 沧海桑田模板
 - 必须是完整的 Minecraft 存档目录。
 - 不要包含 playerdata、stats、advancements、session.lock 等玩家相关文件。
 - 建议在模板制作完成后手动清理 level.dat 中的 Player 实体和时间字段。
+
 请注意，虽然模组会在复制时自动跳过这些玩家信息文件，但保持模板干净更安全。
 
 本地化
